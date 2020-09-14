@@ -90,10 +90,23 @@
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _initial_page_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./initial-page.js */ \"./src/initial-page.js\");\n\n\nObject(_initial_page_js__WEBPACK_IMPORTED_MODULE_0__[\"initialPage\"])();\n\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/initial-page.js":
+/*!*****************************!*\
+  !*** ./src/initial-page.js ***!
+  \*****************************/
+/*! exports provided: initialPage */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"initialPage\", function() { return initialPage; });\nconst initialPage = () => {\n  const content = document.getElementById(\"content\");\n  const bodyh1 = document.createElement(\"h1\");\n  bodyh1.innerText = \"Good Restaurant\";\n  content.appendChild(bodyh1);\n  const bodyImage = document.createElement(\"img\");\n  bodyImage.setAttribute(\"src\", \"./path2.png\");\n  content.appendChild(bodyImage);\n};\n\n\n//# sourceURL=webpack:///./src/initial-page.js?");
 
 /***/ })
 
