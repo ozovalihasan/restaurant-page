@@ -1,9 +1,12 @@
+import mainImage from "./images/main.jpg";
+
 export const initialPage = () => {
   const content = document.getElementById("content");
-  const bodyh1 = document.createElement("h1");
-  bodyh1.innerText = "Good Restaurant";
-  content.appendChild(bodyh1);
+
   const bodyImage = document.createElement("img");
-  bodyImage.setAttribute("src", "./path2.png");
+  bodyImage.src = mainImage;
+  bodyImage.style.backgroundSize = "cover";
+  bodyImage.style.width = "100%";
+
   content.appendChild(bodyImage);
 };
