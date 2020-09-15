@@ -1,1 +1,32 @@
 @import "reset";
+
+.body-image {
+  object-fit: cover;
+  width: 100%;
+}
+.main-nav {
+  display: flex;
+  justify-content: center;
+  .custom-button {
+    background-color: aqua;
+    padding: 20px;
+    margin: 20px;
+    &:hover {
+      background-color: orange;
+      cursor: pointer;
+    }
+  }
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.right-part {
+  text-align: center;
+  vertical-align: middle;
+}

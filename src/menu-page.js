@@ -1,12 +1,11 @@
-import mainImage from "./images/main.jpg";
+import mainImage from "./images/hot-meal.jpg";
 
-export const initialPage = () => {
+export const menuPage = () => {
   const content = document.getElementById("content");
 
   const bodyImage = document.createElement("img");
   bodyImage.src = mainImage;
-  bodyImage.style.backgroundSize = "cover";
-  bodyImage.style.width = "100%";
+  bodyImage.classList.add("body-image");
 
   content.appendChild(bodyImage);
 };

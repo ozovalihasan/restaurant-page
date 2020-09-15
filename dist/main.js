@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(false);\n// Module\n___CSS_LOADER_EXPORT___.push([module.i, \"/* http://meyerweb.com/eric/tools/css/reset/\\n   v2.0 | 20110126\\n   License: none (public domain)\\n*/\\nhtml,\\nbody,\\ndiv,\\nspan,\\napplet,\\nobject,\\niframe,\\nh1,\\nh2,\\nh3,\\nh4,\\nh5,\\nh6,\\np,\\nblockquote,\\npre,\\na,\\nabbr,\\nacronym,\\naddress,\\nbig,\\ncite,\\ncode,\\ndel,\\ndfn,\\nem,\\nimg,\\nins,\\nkbd,\\nq,\\ns,\\nsamp,\\nsmall,\\nstrike,\\nstrong,\\nsub,\\nsup,\\ntt,\\nvar,\\nb,\\nu,\\ni,\\ncenter,\\ndl,\\ndt,\\ndd,\\nol,\\nul,\\nli,\\nfieldset,\\nform,\\nlabel,\\nlegend,\\ntable,\\ncaption,\\ntbody,\\ntfoot,\\nthead,\\ntr,\\nth,\\ntd,\\narticle,\\naside,\\ncanvas,\\ndetails,\\nembed,\\nfigure,\\nfigcaption,\\nfooter,\\nheader,\\nhgroup,\\nmenu,\\nnav,\\noutput,\\nruby,\\nsection,\\nsummary,\\ntime,\\nmark,\\naudio,\\nvideo {\\n  margin: 0;\\n  padding: 0;\\n  border: 0;\\n  font: inherit;\\n  font-size: 100%;\\n  vertical-align: baseline;\\n}\\n\\n/* HTML5 display-role reset for older browsers */\\narticle,\\naside,\\ndetails,\\nfigcaption,\\nfigure,\\nfooter,\\nheader,\\nhgroup,\\nmenu,\\nnav,\\nsection {\\n  display: block;\\n}\\n\\nbody {\\n  line-height: 1;\\n}\\n\\nol,\\nul {\\n  list-style: none;\\n}\\n\\nblockquote,\\nq {\\n  quotes: none;\\n}\\n\\nblockquote::before,\\nblockquote::after,\\nq::before,\\nq::after {\\n  content: \\\"\\\";\\n  content: none;\\n}\\n\\ntable {\\n  border-collapse: collapse;\\n  border-spacing: 0;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ __webpack_exports__[\"default\"] = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack:///./src/stylesheets/style.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(false);\n// Module\n___CSS_LOADER_EXPORT___.push([module.i, \"/* http://meyerweb.com/eric/tools/css/reset/\\n   v2.0 | 20110126\\n   License: none (public domain)\\n*/\\nhtml,\\nbody,\\ndiv,\\nspan,\\napplet,\\nobject,\\niframe,\\nh1,\\nh2,\\nh3,\\nh4,\\nh5,\\nh6,\\np,\\nblockquote,\\npre,\\na,\\nabbr,\\nacronym,\\naddress,\\nbig,\\ncite,\\ncode,\\ndel,\\ndfn,\\nem,\\nimg,\\nins,\\nkbd,\\nq,\\ns,\\nsamp,\\nsmall,\\nstrike,\\nstrong,\\nsub,\\nsup,\\ntt,\\nvar,\\nb,\\nu,\\ni,\\ncenter,\\ndl,\\ndt,\\ndd,\\nol,\\nul,\\nli,\\nfieldset,\\nform,\\nlabel,\\nlegend,\\ntable,\\ncaption,\\ntbody,\\ntfoot,\\nthead,\\ntr,\\nth,\\ntd,\\narticle,\\naside,\\ncanvas,\\ndetails,\\nembed,\\nfigure,\\nfigcaption,\\nfooter,\\nheader,\\nhgroup,\\nmenu,\\nnav,\\noutput,\\nruby,\\nsection,\\nsummary,\\ntime,\\nmark,\\naudio,\\nvideo,\\nbutton {\\n  margin: 0;\\n  padding: 0;\\n  border: 0;\\n  font: inherit;\\n  font-size: 100%;\\n  vertical-align: baseline;\\n}\\n\\n/* HTML5 display-role reset for older browsers */\\narticle,\\naside,\\ndetails,\\nfigcaption,\\nfigure,\\nfooter,\\nheader,\\nhgroup,\\nmenu,\\nnav,\\nsection {\\n  display: block;\\n}\\n\\nbody {\\n  line-height: 1;\\n}\\n\\nol,\\nul {\\n  list-style: none;\\n}\\n\\nblockquote,\\nq {\\n  quotes: none;\\n}\\n\\nblockquote::before,\\nblockquote::after,\\nq::before,\\nq::after {\\n  content: \\\"\\\";\\n  content: none;\\n}\\n\\ntable {\\n  border-collapse: collapse;\\n  border-spacing: 0;\\n}\\n\\n.body-image {\\n  object-fit: cover;\\n  width: 100%;\\n}\\n\\n.main-nav {\\n  display: flex;\\n  justify-content: center;\\n}\\n.main-nav .custom-button {\\n  background-color: aqua;\\n  padding: 20px;\\n  margin: 20px;\\n}\\n.main-nav .custom-button:hover {\\n  background-color: orange;\\n  cursor: pointer;\\n}\\n\\n.w-50 {\\n  width: 50%;\\n}\\n\\n.d-flex {\\n  display: flex;\\n}\\n\\n.right-part {\\n  text-align: center;\\n  vertical-align: middle;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ __webpack_exports__[\"default\"] = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack:///./src/stylesheets/style.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -122,6 +122,54 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 
 /***/ }),
 
+/***/ "./src/contact-page.js":
+/*!*****************************!*\
+  !*** ./src/contact-page.js ***!
+  \*****************************/
+/*! exports provided: contactPage */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"contactPage\", function() { return contactPage; });\n/* harmony import */ var _images_contact_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/contact.jpg */ \"./src/images/contact.jpg\");\n\n\nconst contactPage = () => {\n  const content = document.getElementById(\"content\");\n\n  const bodyImage = document.createElement(\"img\");\n  bodyImage.src = _images_contact_jpg__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n  bodyImage.classList.add(\"body-image\");\n\n  content.appendChild(bodyImage);\n};\n\n\n//# sourceURL=webpack:///./src/contact-page.js?");
+
+/***/ }),
+
+/***/ "./src/home-page.js":
+/*!**************************!*\
+  !*** ./src/home-page.js ***!
+  \**************************/
+/*! exports provided: homePage */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"homePage\", function() { return homePage; });\n/* harmony import */ var _images_main_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/main.jpg */ \"./src/images/main.jpg\");\n\n\nconst homePage = () => {\n  const content = document.getElementById(\"content\");\n\n  const mainContainer = document.createElement(\"div\");\n  mainContainer.classList.add(\"main-container\", \"d-flex\");\n\n  const bodyImage = document.createElement(\"img\");\n  bodyImage.src = _images_main_jpg__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n  bodyImage.classList.add(\"body-image\", \"w-50\");\n\n  mainContainer.appendChild(bodyImage);\n\n  const rightPart = document.createElement(\"div\");\n  rightPart.classList.add(\"w-50\", \"right-part\");\n  rightPart.innerText = \"Good Meal\";\n\n  mainContainer.appendChild(rightPart);\n\n  content.appendChild(mainContainer);\n};\n\n\n//# sourceURL=webpack:///./src/home-page.js?");
+
+/***/ }),
+
+/***/ "./src/images/contact.jpg":
+/*!********************************!*\
+  !*** ./src/images/contact.jpg ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"c3d42af39902fb44c43c2f24b7e837e5.jpg\");\n\n//# sourceURL=webpack:///./src/images/contact.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/hot-meal.jpg":
+/*!*********************************!*\
+  !*** ./src/images/hot-meal.jpg ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"83b9a3935e566d2519ba3e5f7083dd7b.jpg\");\n\n//# sourceURL=webpack:///./src/images/hot-meal.jpg?");
+
+/***/ }),
+
 /***/ "./src/images/main.jpg":
 /*!*****************************!*\
   !*** ./src/images/main.jpg ***!
@@ -142,19 +190,31 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _initial_page_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./initial-page.js */ \"./src/initial-page.js\");\n/* harmony import */ var _stylesheets_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./stylesheets/style.scss */ \"./src/stylesheets/style.scss\");\n/* harmony import */ var _stylesheets_style_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_stylesheets_style_scss__WEBPACK_IMPORTED_MODULE_1__);\n\n\nObject(_initial_page_js__WEBPACK_IMPORTED_MODULE_0__[\"initialPage\"])();\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _navbar_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navbar.js */ \"./src/navbar.js\");\n/* harmony import */ var _home_page_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home-page.js */ \"./src/home-page.js\");\n/* harmony import */ var _menu_page_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu-page.js */ \"./src/menu-page.js\");\n/* harmony import */ var _contact_page_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contact-page.js */ \"./src/contact-page.js\");\n/* harmony import */ var _stylesheets_style_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./stylesheets/style.scss */ \"./src/stylesheets/style.scss\");\n/* harmony import */ var _stylesheets_style_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_stylesheets_style_scss__WEBPACK_IMPORTED_MODULE_4__);\n\n\n\n\n\n\nfunction clearUpdate(name) {\n  const content = document.getElementById(\"content\");\n  content.removeChild(content.lastChild);\n  name();\n}\n\nObject(_navbar_js__WEBPACK_IMPORTED_MODULE_0__[\"navBar\"])();\nObject(_home_page_js__WEBPACK_IMPORTED_MODULE_1__[\"homePage\"])();\n\nconst home = document.getElementById(\"home\");\nhome.addEventListener(\"click\", function () {\n  clearUpdate(_home_page_js__WEBPACK_IMPORTED_MODULE_1__[\"homePage\"]);\n});\n\nconst menu = document.getElementById(\"menu\");\nmenu.addEventListener(\"click\", function () {\n  clearUpdate(_menu_page_js__WEBPACK_IMPORTED_MODULE_2__[\"menuPage\"]);\n});\n\nconst contact = document.getElementById(\"contact\");\ncontact.addEventListener(\"click\", function () {\n  clearUpdate(_contact_page_js__WEBPACK_IMPORTED_MODULE_3__[\"contactPage\"]);\n});\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
-/***/ "./src/initial-page.js":
-/*!*****************************!*\
-  !*** ./src/initial-page.js ***!
-  \*****************************/
-/*! exports provided: initialPage */
+/***/ "./src/menu-page.js":
+/*!**************************!*\
+  !*** ./src/menu-page.js ***!
+  \**************************/
+/*! exports provided: menuPage */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"initialPage\", function() { return initialPage; });\n/* harmony import */ var _images_main_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/main.jpg */ \"./src/images/main.jpg\");\n\n\nconst initialPage = () => {\n  const content = document.getElementById(\"content\");\n\n  const bodyImage = document.createElement(\"img\");\n  bodyImage.src = _images_main_jpg__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n  bodyImage.style.backgroundSize = \"cover\";\n  bodyImage.style.width = \"100%\";\n\n  content.appendChild(bodyImage);\n};\n\n\n//# sourceURL=webpack:///./src/initial-page.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"menuPage\", function() { return menuPage; });\n/* harmony import */ var _images_hot_meal_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/hot-meal.jpg */ \"./src/images/hot-meal.jpg\");\n\n\nconst menuPage = () => {\n  const content = document.getElementById(\"content\");\n\n  const bodyImage = document.createElement(\"img\");\n  bodyImage.src = _images_hot_meal_jpg__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n  bodyImage.classList.add(\"body-image\");\n\n  content.appendChild(bodyImage);\n};\n\n\n//# sourceURL=webpack:///./src/menu-page.js?");
+
+/***/ }),
+
+/***/ "./src/navbar.js":
+/*!***********************!*\
+  !*** ./src/navbar.js ***!
+  \***********************/
+/*! exports provided: navBar */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"navBar\", function() { return navBar; });\nconst navBar = () => {\n  const content = document.getElementById(\"content\");\n\n  const nav = document.createElement(\"div\");\n  nav.classList.add(\"main-nav\");\n\n  const homePage = document.createElement(\"button\");\n  homePage.classList.add(\"home-page\", \"custom-button\");\n  homePage.innerText = \"Home\";\n  homePage.id = \"home\";\n\n  const menuPage = document.createElement(\"button\");\n  menuPage.classList.add(\"menu-page\", \"custom-button\");\n  menuPage.innerText = \"Menu\";\n  menuPage.id = \"menu\";\n\n  const contactPage = document.createElement(\"button\");\n  contactPage.classList.add(\"contact-page\", \"custom-button\");\n  contactPage.innerText = \"Contact\";\n  contactPage.id = \"contact\";\n\n  nav.appendChild(homePage);\n  nav.appendChild(menuPage);\n  nav.appendChild(contactPage);\n\n  content.appendChild(nav);\n};\n\n\n//# sourceURL=webpack:///./src/navbar.js?");
 
 /***/ }),
 
