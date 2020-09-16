@@ -2,21 +2,25 @@ import mainImage from "./images/main.jpg";
 
 export const homePage = () => {
   const content = document.getElementById("content");
+  content.style.backgroundImage = `url("${mainImage}")`;
 
   const mainContainer = document.createElement("div");
   mainContainer.classList.add("main-container", "d-flex");
 
-  const bodyImage = document.createElement("img");
-  bodyImage.src = mainImage;
-  bodyImage.classList.add("body-image", "w-50");
+  const allMenu = document.createElement("div");
+  allMenu.classList.add("all-menu");
 
-  mainContainer.appendChild(bodyImage);
+  allMenu.innerHTML = `
+    <div class="main-page"> 
+      <div class="main-title">
+        Best Restaurant
+      </div>
+      <div class="subtitle">
+        The most delicious meal you've ever had 
+      </div>
+    </div>
+`;
 
-  const rightPart = document.createElement("div");
-  rightPart.classList.add("w-50", "right-part");
-  rightPart.innerText = "Good Meal";
-
-  mainContainer.appendChild(rightPart);
-
+  mainContainer.appendChild(allMenu);
   content.appendChild(mainContainer);
 };

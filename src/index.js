@@ -4,26 +4,24 @@ import { menuPage } from "./menu-page.js";
 import { contactPage } from "./contact-page.js";
 import "./stylesheets/style.scss";
 
-function clearUpdate(name) {
-  const content = document.getElementById("content");
-  content.removeChild(content.lastChild);
-  name();
+function clearPage() {
+  const parent = document.getElementById("content");
+  parent.lastChild.remove();
 }
+
+const showPage = {
+  home: homePage,
+  menu: menuPage,
+  contact: contactPage,
+};
 
 navBar();
 homePage();
 
-const home = document.getElementById("home");
-home.addEventListener("click", function () {
-  clearUpdate(homePage);
-});
-
-const menu = document.getElementById("menu");
-menu.addEventListener("click", function () {
-  clearUpdate(menuPage);
-});
-
-const contact = document.getElementById("contact");
-contact.addEventListener("click", function () {
-  clearUpdate(contactPage);
+["home", "menu", "contact"].forEach((val) => {
+  const pageButton = document.getElementById(val);
+  pageButton.addEventListener("click", function () {
+    clearPage(val);
+    showPage[val]();
+  });
 });

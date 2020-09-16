@@ -1,5 +1,11 @@
 @import "reset";
 
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
 .body-image {
   object-fit: cover;
   width: 100%;
@@ -26,7 +32,77 @@
   display: flex;
 }
 
-.right-part {
-  text-align: center;
-  vertical-align: middle;
+#content {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-information {
+  background-color: #f7f5afda;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-box-shadow: 0px 0px 51px 12px rgba(84, 81, 84, 1);
+  -moz-box-shadow: 0px 0px 51px 12px rgba(84, 81, 84, 1);
+  box-shadow: 0px 0px 51px 12px rgba(84, 81, 84, 1);
+  border-radius: 10px;
+  > div {
+    margin: 30px;
+  }
+}
+
+.all-menu {
+  width: 100%;
+
+  > * {
+    height: 30vw;
+  }
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .meal-name {
+    color: #ffffff;
+    height: 100px;
+    width: auto;
+    padding: 100px;
+    position: absolute;
+    flex-grow: 1;
+    font-size: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000aa;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.position-relative {
+  position: relative;
+}
+
+.main-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 80px;
+  flex-direction: column;
+  .subtitle {
+    padding-top: 100px;
+    font-size: 40px;
+  }
 }
