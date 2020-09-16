@@ -5,6 +5,7 @@ import soupImage from "./images/soup.jpg";
 export const menuPage = () => {
   const content = document.getElementById("content");
   content.classList.add("content");
+  content.style.backgroundImage = `url("")`;
 
   const mainContainer = document.createElement("div");
   mainContainer.classList.add("main-container", "d-flex");
