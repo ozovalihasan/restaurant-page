@@ -20,9 +20,9 @@
 }
 
 .box {
-  -webkit-box-shadow: 0px 0px 51px 12px rgba(84, 81, 84, 1);
-  -moz-box-shadow: 0px 0px 51px 12px rgba(84, 81, 84, 1);
-  box-shadow: 0px 0px 51px 12px rgba(84, 81, 84, 1);
+  -webkit-box-shadow: 0 0 51px 12px rgba(84, 81, 84, 1);
+  -moz-box-shadow: 0 0 51px 12px rgba(84, 81, 84, 1);
+  box-shadow: 0 0 51px 12px rgba(84, 81, 84, 1);
   border-radius: 10px;
 }
 
@@ -45,20 +45,26 @@ body {
   height: 100vh;
   background-size: cover;
   background-position: center;
-  background-color: #000000;
+  background-color: #000;
 }
 
 .main-nav {
   display: flex;
   justify-content: center;
+
   .custom-button {
     background-color: rgb(170, 212, 212);
     padding: 3vh 3vw;
     margin: 3vh 3vw;
     border-radius: 10px;
+
     &:hover {
       background-color: #c7c7c7;
       cursor: pointer;
+    }
+
+    &:focus {
+      outline: none;
     }
   }
 }
@@ -68,7 +74,7 @@ body {
   height: 50vh;
   padding: 4vw;
   margin: 4vw;
-  color: #ffffff;
+  color: #fff;
   background-color: #31313196;
   font-size: 8vw;
   flex-direction: column;
@@ -94,7 +100,7 @@ body {
   }
 
   .meal-name {
-    color: #ffffff;
+    color: #fff;
     height: 10vw;
     width: auto;
     padding: 10vw;
@@ -103,7 +109,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #000000aa;
+    background-color: #000a;
     border-radius: 20px;
     text-align: center;
   }

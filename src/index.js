@@ -1,13 +1,13 @@
-import { navBar } from "./navbar.js";
-import { homePage } from "./home-page.js";
-import { menuPage } from "./menu-page.js";
-import { contactPage } from "./contact-page.js";
-import "./stylesheets/style.scss";
+import navBar from './navbar';
+import homePage from './home-page';
+import menuPage from './menu-page';
+import contactPage from './contact-page';
+import './stylesheets/style.scss';
 
-function clearPage() {
-  const parent = document.getElementById("content");
+const clearPage = () => {
+  const parent = document.getElementById('content');
   parent.lastChild.remove();
-}
+};
 
 const showPage = {
   home: homePage,
@@ -18,10 +18,10 @@ const showPage = {
 navBar();
 homePage();
 
-["home", "menu", "contact"].forEach((val) => {
+['home', 'menu', 'contact'].forEach((val) => {
   const pageButton = document.getElementById(val);
-  pageButton.addEventListener("click", function () {
-    clearPage(val);
+  pageButton.addEventListener('click', () => {
+    clearPage();
     showPage[val]();
   });
 });

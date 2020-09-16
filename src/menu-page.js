@@ -1,17 +1,17 @@
-import hotMealImage from "./images/hot-meal.jpg";
-import dessertImage from "./images/dessert.jpg";
-import soupImage from "./images/soup.jpg";
+import hotMealImage from './images/hot-meal.jpg';
+import dessertImage from './images/dessert.jpg';
+import soupImage from './images/soup.jpg';
 
-export const menuPage = () => {
-  const content = document.getElementById("content");
-  content.classList.add("content");
-  content.style.backgroundImage = `url("")`;
+export default function menuPage() {
+  const content = document.getElementById('content');
+  content.classList.add('content');
+  content.style.backgroundImage = 'url("")';
 
-  const mainContainer = document.createElement("div");
-  mainContainer.classList.add("main-container", "d-flex");
+  const mainContainer = document.createElement('div');
+  mainContainer.classList.add('main-container', 'd-flex');
 
-  const container = document.createElement("div");
-  container.classList.add("all-menu");
+  const container = document.createElement('div');
+  container.classList.add('all-menu');
 
   container.innerHTML = `
   <div class="position-relative ">
@@ -30,4 +30,4 @@ export const menuPage = () => {
 
   mainContainer.appendChild(container);
   content.appendChild(mainContainer);
-};
+}

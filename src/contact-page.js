@@ -1,14 +1,14 @@
-import mainImage from "./images/contact.jpg";
+import mainImage from './images/contact.jpg';
 
-export const contactPage = () => {
-  const content = document.getElementById("content");
+export default function contactPage() {
+  const content = document.getElementById('content');
   content.style.backgroundImage = `url("${mainImage}")`;
 
-  const mainContainer = document.createElement("div");
-  mainContainer.classList.add("main-container", "d-flex");
+  const mainContainer = document.createElement('div');
+  mainContainer.classList.add('main-container', 'd-flex');
 
-  const contactInformation = document.createElement("div");
-  contactInformation.classList.add("contact-information", "box");
+  const contactInformation = document.createElement('div');
+  contactInformation.classList.add('contact-information', 'box');
 
   contactInformation.innerHTML = `
     <div>Call Now </div>
@@ -40,4 +40,4 @@ export const contactPage = () => {
 
   mainContainer.appendChild(contactInformation);
   content.appendChild(mainContainer);
-};
+}
