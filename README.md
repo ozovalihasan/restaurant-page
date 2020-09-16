@@ -4,7 +4,7 @@
 ![GitHub followers](https://img.shields.io/github/followers/ozovalihasan?label=ozovalihasan&style=social)
 ![Twitter URL](https://img.shields.io/twitter/follow/ozovalihasan?label=Follow&style=social)
 
-> This is the second project of Microverse JavaScript course
+> This is the second project of Microverse JavaScript course.
 
 > Best Restaurant!
 
@@ -18,7 +18,7 @@ All pages of this website are built by using DOM manipulation and rendering dyna
 
 ## Features
 
-The website has three pages; main page, menu page and contact page
+The website has three pages; main page, menu page and contact page.
 
 ## Built with
 
@@ -41,7 +41,7 @@ Please [check](https://raw.githack.com/ozovalihasan/restaurant-page/main-parts/d
 - Run `npm run dev`
 - Open your browser and go to http://localhost:8080 and open 'dist' folder
 
-I suggest using VSCode as editor and [live server extenstion](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) for development
+I suggest using VSCode as editor and [live server extenstion](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) for development.
 
 ## Authors
 
