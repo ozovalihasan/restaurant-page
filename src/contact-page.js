@@ -8,7 +8,7 @@ export const contactPage = () => {
   mainContainer.classList.add("main-container", "d-flex");
 
   const contactInformation = document.createElement("div");
-  contactInformation.classList.add("contact-information");
+  contactInformation.classList.add("contact-information", "box");
 
   contactInformation.innerHTML = `
     <div>Call Now </div>

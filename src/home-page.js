@@ -5,13 +5,10 @@ export const homePage = () => {
   content.style.backgroundImage = `url("${mainImage}")`;
 
   const mainContainer = document.createElement("div");
-  mainContainer.classList.add("main-container", "d-flex");
+  mainContainer.classList.add("main-container", "d-flex", "center-vh");
 
-  const allMenu = document.createElement("div");
-  allMenu.classList.add("all-menu");
-
-  allMenu.innerHTML = `
-    <div class="main-page"> 
+  mainContainer.innerHTML = `
+    <div class="main-page box center-vh "> 
       <div class="main-title">
         Best Restaurant
       </div>
@@ -21,6 +18,5 @@ export const homePage = () => {
     </div>
 `;
 
-  mainContainer.appendChild(allMenu);
   content.appendChild(mainContainer);
 };

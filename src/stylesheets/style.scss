@@ -10,19 +10,6 @@
   object-fit: cover;
   width: 100%;
 }
-.main-nav {
-  display: flex;
-  justify-content: center;
-  .custom-button {
-    background-color: aqua;
-    padding: 20px;
-    margin: 20px;
-    &:hover {
-      background-color: orange;
-      cursor: pointer;
-    }
-  }
-}
 
 .w-50 {
   width: 50%;
@@ -32,28 +19,64 @@
   display: flex;
 }
 
+.box {
+  -webkit-box-shadow: 0px 0px 51px 12px rgba(84, 81, 84, 1);
+  -moz-box-shadow: 0px 0px 51px 12px rgba(84, 81, 84, 1);
+  box-shadow: 0px 0px 51px 12px rgba(84, 81, 84, 1);
+  border-radius: 10px;
+}
+
+.center-vh {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.position-relative {
+  position: relative;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 #content {
   width: 100%;
   height: 100vh;
   background-size: cover;
   background-position: center;
+  background-color: #000000;
 }
 
-.contact-information {
-  background-color: #f7f5afda;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  -webkit-box-shadow: 0px 0px 51px 12px rgba(84, 81, 84, 1);
-  -moz-box-shadow: 0px 0px 51px 12px rgba(84, 81, 84, 1);
-  box-shadow: 0px 0px 51px 12px rgba(84, 81, 84, 1);
-  border-radius: 10px;
-  > div {
-    margin: 30px;
+.main-nav {
+  display: flex;
+  justify-content: center;
+  .custom-button {
+    background-color: rgb(170, 212, 212);
+    padding: 3vh 3vw;
+    margin: 3vh 3vw;
+    border-radius: 10px;
+    &:hover {
+      background-color: #c7c7c7;
+      cursor: pointer;
+    }
+  }
+}
+
+.main-page {
+  width: auto;
+  height: 50vh;
+  padding: 4vw;
+  margin: 4vw;
+  color: #ffffff;
+  background-color: #31313196;
+  font-size: 8vw;
+  flex-direction: column;
+  text-align: center;
+
+  .subtitle {
+    padding-top: 5vw;
+    font-size: 4vw;
   }
 }
 
@@ -72,37 +95,31 @@
 
   .meal-name {
     color: #ffffff;
-    height: 100px;
+    height: 10vw;
     width: auto;
-    padding: 100px;
+    padding: 10vw;
     position: absolute;
-    flex-grow: 1;
-    font-size: 40px;
+    font-size: 5vw;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #000000aa;
     border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
   }
 }
 
-.position-relative {
-  position: relative;
-}
+.contact-information {
+  background-color: #f7f5afda;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
-.main-page {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #ffffff;
-  font-size: 80px;
-  flex-direction: column;
-  .subtitle {
-    padding-top: 100px;
-    font-size: 40px;
+  > div {
+    margin: 30px;
   }
 }
