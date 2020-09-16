@@ -91,6 +91,9 @@ button {
   font: inherit;
   font-size: 100%;
   vertical-align: baseline;
+  &:focus {
+    outline: none;
+  }
 }
 
 /* HTML5 display-role reset for older browsers */
