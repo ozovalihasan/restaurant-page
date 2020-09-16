@@ -1,0 +1,131 @@
+@import "reset";
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.body-image {
+  object-fit: cover;
+  width: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.box {
+  -webkit-box-shadow: 0 0 51px 12px rgba(84, 81, 84, 1);
+  -moz-box-shadow: 0 0 51px 12px rgba(84, 81, 84, 1);
+  box-shadow: 0 0 51px 12px rgba(84, 81, 84, 1);
+  border-radius: 10px;
+}
+
+.center-vh {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.position-relative {
+  position: relative;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-color: #000;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+
+  .custom-button {
+    background-color: rgb(170, 212, 212);
+    padding: 3vh 3vw;
+    margin: 3vh 3vw;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: #c7c7c7;
+      cursor: pointer;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.main-page {
+  width: auto;
+  height: 50vh;
+  padding: 4vw;
+  margin: 4vw;
+  color: #fff;
+  background-color: #31313196;
+  font-size: 8vw;
+  flex-direction: column;
+  text-align: center;
+
+  .subtitle {
+    padding-top: 5vw;
+    font-size: 4vw;
+  }
+}
+
+.all-menu {
+  width: 100%;
+
+  > * {
+    height: 30vw;
+  }
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .meal-name {
+    color: #fff;
+    height: 10vw;
+    width: auto;
+    padding: 10vw;
+    position: absolute;
+    font-size: 5vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000a;
+    border-radius: 20px;
+    text-align: center;
+  }
+}
+
+.contact-information {
+  background-color: #f7f5afda;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  > div {
+    margin: 30px;
+  }
+}
