@@ -1,1 +1,256 @@
-!function(e){var n={};function t(o){if(n[o])return n[o].exports;var i=n[o]={i:o,l:!1,exports:{}};return e[o].call(i.exports,i,i.exports,t),i.l=!0,i.exports}t.m=e,t.c=n,t.d=function(e,n,o){t.o(e,n)||Object.defineProperty(e,n,{enumerable:!0,get:o})},t.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},t.t=function(e,n){if(1&n&&(e=t(e)),8&n)return e;if(4&n&&"object"==typeof e&&e&&e.__esModule)return e;var o=Object.create(null);if(t.r(o),Object.defineProperty(o,"default",{enumerable:!0,value:e}),2&n&&"string"!=typeof e)for(var i in e)t.d(o,i,function(n){return e[n]}.bind(null,i));return o},t.n=function(e){var n=e&&e.__esModule?function(){return e.default}:function(){return e};return t.d(n,"a",n),n},t.o=function(e,n){return Object.prototype.hasOwnProperty.call(e,n)},t.p="",t(t.s=4)}([function(e,n,t){"use strict";e.exports=function(e){var n=[];return n.toString=function(){return this.map((function(n){var t=function(e,n){var t=e[1]||"",o=e[3];if(!o)return t;if(n&&"function"==typeof btoa){var i=(r=o,c=btoa(unescape(encodeURIComponent(JSON.stringify(r)))),d="sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(c),"/*# ".concat(d," */")),a=o.sources.map((function(e){return"/*# sourceURL=".concat(o.sourceRoot||"").concat(e," */")}));return[t].concat(a).concat([i]).join("\n")}var r,c,d;return[t].join("\n")}(n,e);return n[2]?"@media ".concat(n[2]," {").concat(t,"}"):t})).join("")},n.i=function(e,t,o){"string"==typeof e&&(e=[[null,e,""]]);var i={};if(o)for(var a=0;a<this.length;a++){var r=this[a][0];null!=r&&(i[r]=!0)}for(var c=0;c<e.length;c++){var d=[].concat(e[c]);o&&i[d[0]]||(t&&(d[2]?d[2]="".concat(t," and ").concat(d[2]):d[2]=t),n.push(d))}},n}},function(e,n,t){var o=t(2),i=t(3);"string"==typeof(i=i.__esModule?i.default:i)&&(i=[[e.i,i,""]]);var a={insert:"head",singleton:!1};o(i,a);e.exports=i.locals||{}},function(e,n,t){"use strict";var o,i=function(){return void 0===o&&(o=Boolean(window&&document&&document.all&&!window.atob)),o},a=function(){var e={};return function(n){if(void 0===e[n]){var t=document.querySelector(n);if(window.HTMLIFrameElement&&t instanceof window.HTMLIFrameElement)try{t=t.contentDocument.head}catch(e){t=null}e[n]=t}return e[n]}}(),r=[];function c(e){for(var n=-1,t=0;t<r.length;t++)if(r[t].identifier===e){n=t;break}return n}function d(e,n){for(var t={},o=[],i=0;i<e.length;i++){var a=e[i],d=n.base?a[0]+n.base:a[0],s=t[d]||0,l="".concat(d," ").concat(s);t[d]=s+1;var u=c(l),f={css:a[1],media:a[2],sourceMap:a[3]};-1!==u?(r[u].references++,r[u].updater(f)):r.push({identifier:l,updater:b(f,n),references:1}),o.push(l)}return o}function s(e){var n=document.createElement("style"),o=e.attributes||{};if(void 0===o.nonce){var i=t.nc;i&&(o.nonce=i)}if(Object.keys(o).forEach((function(e){n.setAttribute(e,o[e])})),"function"==typeof e.insert)e.insert(n);else{var r=a(e.insert||"head");if(!r)throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");r.appendChild(n)}return n}var l,u=(l=[],function(e,n){return l[e]=n,l.filter(Boolean).join("\n")});function f(e,n,t,o){var i=t?"":o.media?"@media ".concat(o.media," {").concat(o.css,"}"):o.css;if(e.styleSheet)e.styleSheet.cssText=u(n,i);else{var a=document.createTextNode(i),r=e.childNodes;r[n]&&e.removeChild(r[n]),r.length?e.insertBefore(a,r[n]):e.appendChild(a)}}function m(e,n,t){var o=t.css,i=t.media,a=t.sourceMap;if(i?e.setAttribute("media",i):e.removeAttribute("media"),a&&btoa&&(o+="\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(a))))," */")),e.styleSheet)e.styleSheet.cssText=o;else{for(;e.firstChild;)e.removeChild(e.firstChild);e.appendChild(document.createTextNode(o))}}var v=null,p=0;function b(e,n){var t,o,i;if(n.singleton){var a=p++;t=v||(v=s(n)),o=f.bind(null,t,a,!1),i=f.bind(null,t,a,!0)}else t=s(n),o=m.bind(null,t,n),i=function(){!function(e){if(null===e.parentNode)return!1;e.parentNode.removeChild(e)}(t)};return o(e),function(n){if(n){if(n.css===e.css&&n.media===e.media&&n.sourceMap===e.sourceMap)return;o(e=n)}else i()}}e.exports=function(e,n){(n=n||{}).singleton||"boolean"==typeof n.singleton||(n.singleton=i());var t=d(e=e||[],n);return function(e){if(e=e||[],"[object Array]"===Object.prototype.toString.call(e)){for(var o=0;o<t.length;o++){var i=c(t[o]);r[i].references--}for(var a=d(e,n),s=0;s<t.length;s++){var l=c(t[s]);0===r[l].references&&(r[l].updater(),r.splice(l,1))}t=a}}}},function(e,n,t){"use strict";t.r(n);var o=t(0),i=t.n(o)()(!1);i.push([e.i,'html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video,button{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote::before,blockquote::after,q::before,q::after{content:"";content:none}table{border-collapse:collapse;border-spacing:0}*{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}.body-image{object-fit:cover;width:100%}.w-50{width:50%}.d-flex{display:flex}.box{-webkit-box-shadow:0 0 51px 12px #545154;-moz-box-shadow:0 0 51px 12px #545154;box-shadow:0 0 51px 12px #545154;border-radius:10px}.center-vh{display:flex;justify-content:center;align-items:center}.position-relative{position:relative}body{font-family:Arial,Helvetica,sans-serif}#content{width:100%;height:100vh;background-size:cover;background-position:center;background-color:#000}.main-nav{display:flex;justify-content:center}.main-nav .custom-button{background-color:#aad4d4;padding:3vh 3vw;margin:3vh 3vw;border-radius:10px}.main-nav .custom-button:hover{background-color:#c7c7c7;cursor:pointer}.main-nav .custom-button:focus{outline:none}.main-page{width:auto;height:50vh;padding:4vw;margin:4vw;color:#fff;background-color:#31313196;font-size:8vw;flex-direction:column;text-align:center}.main-page .subtitle{padding-top:5vw;font-size:4vw}.all-menu{width:100%}.all-menu>*{height:30vw}.all-menu img{object-fit:cover;width:100%;height:100%}.all-menu .meal-name{color:#fff;height:10vw;width:auto;padding:10vw;position:absolute;font-size:5vw;top:50%;left:50%;transform:translate(-50%, -50%);background-color:#000a;border-radius:20px;text-align:center}.contact-information{background-color:#f7f5afda;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);margin:auto;display:grid;grid-template-columns:repeat(2, 1fr)}.contact-information>div{margin:30px}',""]),n.default=i},function(e,n,t){"use strict";t.r(n);var o=t.p+"c0f56afd0be284ba4b64130dafdd1cc1.jpg";function i(){const e=document.getElementById("content");e.style.backgroundImage=`url("${o}")`;const n=document.createElement("div");n.classList.add("main-container","d-flex","center-vh"),n.innerHTML='\n    <div class="main-page box center-vh "> \n      <div class="main-title">\n        Best Restaurant\n      </div>\n      <div class="subtitle">\n        The most delicious meal you\'ve ever had \n      </div>\n    </div>\n',e.appendChild(n)}var a=t.p+"83b9a3935e566d2519ba3e5f7083dd7b.jpg",r=t.p+"7fba5b3424b5b3c93f85433f937a2a6d.jpg",c=t.p+"0a13556969b278bac01a740144bc6c65.jpg";var d=t.p+"c3d42af39902fb44c43c2f24b7e837e5.jpg";t(1);const s={home:i,menu:function(){const e=document.getElementById("content");e.classList.add("content"),e.style.backgroundImage='url("")';const n=document.createElement("div");n.classList.add("main-container","d-flex");const t=document.createElement("div");t.classList.add("all-menu"),t.innerHTML=`\n  <div class="position-relative ">\n    <img src="${c}" alt="">\n    <div class="meal-name box center-vh">Soup</div>\n  </div>\n  <div class="position-relative">\n    <img src="${a}" alt="">\n    <div class="meal-name box center-vh">Hot Meal</div>\n  </div>\n  <div class="position-relative">\n    <img src="${r}" alt="">\n    <div class="meal-name box center-vh">Dessert</div>\n  </div>\n`,n.appendChild(t),e.appendChild(n)},contact:function(){const e=document.getElementById("content");e.style.backgroundImage=`url("${d}")`;const n=document.createElement("div");n.classList.add("main-container","d-flex");const t=document.createElement("div");t.classList.add("contact-information","box"),t.innerHTML="\n    <div>Call Now </div>\n    <div>609-659-3528</div>\n    <div>E-mail</div>\n    <div>bestrestaurant@email.com</div>\n    <div>Location</div>\n    <div>\n      <div>\n        4932  Moonlight Drive        \n      </div>\n      <div>\n        Camden\n      </div>\n      <div>\n        New Jersey\n      </div>\n    </div>\n    <div>Opening Hours</div>\n    <div>\n      <div>\n        9am -18pm(Monday-Friday)        \n      </div>\n      <div>\n        10am -19pm(Saturday)        \n      </div>\n    </div>\n  ",n.appendChild(t),e.appendChild(n)}};!function(){const e=document.getElementById("content"),n=document.createElement("div");n.classList.add("main-nav");const t=document.createElement("button");t.classList.add("home-page","custom-button"),t.innerText="Home",t.id="home";const o=document.createElement("button");o.classList.add("menu-page","custom-button"),o.innerText="Menu",o.id="menu";const i=document.createElement("button");i.classList.add("contact-page","custom-button"),i.innerText="Contact",i.id="contact",n.appendChild(t),n.appendChild(o),n.appendChild(i),e.appendChild(n)}(),i(),["home","menu","contact"].forEach(e=>{document.getElementById(e).addEventListener("click",()=>{document.getElementById("content").lastChild.remove(),s[e]()})})}]);
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/stylesheets/style.scss":
+/*!*****************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/stylesheets/style.scss ***!
+  \*****************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(false);\n// Module\n___CSS_LOADER_EXPORT___.push([module.i, \"/* http://meyerweb.com/eric/tools/css/reset/\\n   v2.0 | 20110126\\n   License: none (public domain)\\n*/\\nhtml,\\nbody,\\ndiv,\\nspan,\\napplet,\\nobject,\\niframe,\\nh1,\\nh2,\\nh3,\\nh4,\\nh5,\\nh6,\\np,\\nblockquote,\\npre,\\na,\\nabbr,\\nacronym,\\naddress,\\nbig,\\ncite,\\ncode,\\ndel,\\ndfn,\\nem,\\nimg,\\nins,\\nkbd,\\nq,\\ns,\\nsamp,\\nsmall,\\nstrike,\\nstrong,\\nsub,\\nsup,\\ntt,\\nvar,\\nb,\\nu,\\ni,\\ncenter,\\ndl,\\ndt,\\ndd,\\nol,\\nul,\\nli,\\nfieldset,\\nform,\\nlabel,\\nlegend,\\ntable,\\ncaption,\\ntbody,\\ntfoot,\\nthead,\\ntr,\\nth,\\ntd,\\narticle,\\naside,\\ncanvas,\\ndetails,\\nembed,\\nfigure,\\nfigcaption,\\nfooter,\\nheader,\\nhgroup,\\nmenu,\\nnav,\\noutput,\\nruby,\\nsection,\\nsummary,\\ntime,\\nmark,\\naudio,\\nvideo,\\nbutton {\\n  margin: 0;\\n  padding: 0;\\n  border: 0;\\n  font: inherit;\\n  font-size: 100%;\\n  vertical-align: baseline;\\n}\\n\\n/* HTML5 display-role reset for older browsers */\\narticle,\\naside,\\ndetails,\\nfigcaption,\\nfigure,\\nfooter,\\nheader,\\nhgroup,\\nmenu,\\nnav,\\nsection {\\n  display: block;\\n}\\n\\nbody {\\n  line-height: 1;\\n}\\n\\nol,\\nul {\\n  list-style: none;\\n}\\n\\nblockquote,\\nq {\\n  quotes: none;\\n}\\n\\nblockquote::before,\\nblockquote::after,\\nq::before,\\nq::after {\\n  content: \\\"\\\";\\n  content: none;\\n}\\n\\ntable {\\n  border-collapse: collapse;\\n  border-spacing: 0;\\n}\\n\\n* {\\n  box-sizing: border-box;\\n  -moz-box-sizing: border-box;\\n  -webkit-box-sizing: border-box;\\n}\\n\\n.body-image {\\n  object-fit: cover;\\n  width: 100%;\\n}\\n\\n.w-50 {\\n  width: 50%;\\n}\\n\\n.d-flex {\\n  display: flex;\\n}\\n\\n.box {\\n  -webkit-box-shadow: 0 0 51px 12px #545154;\\n  -moz-box-shadow: 0 0 51px 12px #545154;\\n  box-shadow: 0 0 51px 12px #545154;\\n  border-radius: 10px;\\n}\\n\\n.center-vh {\\n  display: flex;\\n  justify-content: center;\\n  align-items: center;\\n}\\n\\n.position-relative {\\n  position: relative;\\n}\\n\\nbody {\\n  font-family: Arial, Helvetica, sans-serif;\\n}\\n\\n#content {\\n  width: 100%;\\n  height: 100vh;\\n  background-size: cover;\\n  background-position: center;\\n  background-color: #000;\\n}\\n\\n.main-nav {\\n  display: flex;\\n  justify-content: center;\\n}\\n.main-nav .custom-button {\\n  background-color: #aad4d4;\\n  padding: 3vh 3vw;\\n  margin: 3vh 3vw;\\n  border-radius: 10px;\\n}\\n.main-nav .custom-button:hover {\\n  background-color: #c7c7c7;\\n  cursor: pointer;\\n}\\n.main-nav .custom-button:focus {\\n  outline: none;\\n}\\n\\n.main-page {\\n  width: auto;\\n  height: 50vh;\\n  padding: 4vw;\\n  margin: 4vw;\\n  color: #fff;\\n  background-color: #31313196;\\n  font-size: 8vw;\\n  flex-direction: column;\\n  text-align: center;\\n}\\n.main-page .subtitle {\\n  padding-top: 5vw;\\n  font-size: 4vw;\\n}\\n\\n.all-menu {\\n  width: 100%;\\n}\\n.all-menu > * {\\n  height: 30vw;\\n}\\n.all-menu img {\\n  object-fit: cover;\\n  width: 100%;\\n  height: 100%;\\n}\\n.all-menu .meal-name {\\n  color: #fff;\\n  height: 10vw;\\n  width: auto;\\n  padding: 10vw;\\n  position: absolute;\\n  font-size: 5vw;\\n  top: 50%;\\n  left: 50%;\\n  transform: translate(-50%, -50%);\\n  background-color: #000a;\\n  border-radius: 20px;\\n  text-align: center;\\n}\\n\\n.contact-information {\\n  background-color: #f7f5afda;\\n  position: absolute;\\n  top: 50%;\\n  left: 50%;\\n  transform: translate(-50%, -50%);\\n  margin: auto;\\n  display: grid;\\n  grid-template-columns: repeat(2, 1fr);\\n}\\n.contact-information > div {\\n  margin: 30px;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ __webpack_exports__[\"default\"] = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack:///./src/stylesheets/style.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/api.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\n// eslint-disable-next-line func-names\nmodule.exports = function (useSourceMap) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item, useSourceMap);\n\n      if (item[2]) {\n        return \"@media \".concat(item[2], \" {\").concat(content, \"}\");\n      }\n\n      return content;\n    }).join('');\n  }; // import a list of modules into the list\n  // eslint-disable-next-line func-names\n\n\n  list.i = function (modules, mediaQuery, dedupe) {\n    if (typeof modules === 'string') {\n      // eslint-disable-next-line no-param-reassign\n      modules = [[null, modules, '']];\n    }\n\n    var alreadyImportedModules = {};\n\n    if (dedupe) {\n      for (var i = 0; i < this.length; i++) {\n        // eslint-disable-next-line prefer-destructuring\n        var id = this[i][0];\n\n        if (id != null) {\n          alreadyImportedModules[id] = true;\n        }\n      }\n    }\n\n    for (var _i = 0; _i < modules.length; _i++) {\n      var item = [].concat(modules[_i]);\n\n      if (dedupe && alreadyImportedModules[item[0]]) {\n        // eslint-disable-next-line no-continue\n        continue;\n      }\n\n      if (mediaQuery) {\n        if (!item[2]) {\n          item[2] = mediaQuery;\n        } else {\n          item[2] = \"\".concat(mediaQuery, \" and \").concat(item[2]);\n        }\n      }\n\n      list.push(item);\n    }\n  };\n\n  return list;\n};\n\nfunction cssWithMappingToString(item, useSourceMap) {\n  var content = item[1] || ''; // eslint-disable-next-line prefer-destructuring\n\n  var cssMapping = item[3];\n\n  if (!cssMapping) {\n    return content;\n  }\n\n  if (useSourceMap && typeof btoa === 'function') {\n    var sourceMapping = toComment(cssMapping);\n    var sourceURLs = cssMapping.sources.map(function (source) {\n      return \"/*# sourceURL=\".concat(cssMapping.sourceRoot || '').concat(source, \" */\");\n    });\n    return [content].concat(sourceURLs).concat([sourceMapping]).join('\\n');\n  }\n\n  return [content].join('\\n');\n} // Adapted from convert-source-map (MIT)\n\n\nfunction toComment(sourceMap) {\n  // eslint-disable-next-line no-undef\n  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));\n  var data = \"sourceMappingURL=data:application/json;charset=utf-8;base64,\".concat(base64);\n  return \"/*# \".concat(data, \" */\");\n}\n\n//# sourceURL=webpack:///./node_modules/css-loader/dist/runtime/api.js?");
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function memorize() {\n    if (typeof memo === 'undefined') {\n      // Test for IE <= 9 as proposed by Browserhacks\n      // @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805\n      // Tests for existence of standard globals is to allow style-loader\n      // to operate correctly into non-standard environments\n      // @see https://github.com/webpack-contrib/style-loader/issues/177\n      memo = Boolean(window && document && document.all && !window.atob);\n    }\n\n    return memo;\n  };\n}();\n\nvar getTarget = function getTarget() {\n  var memo = {};\n  return function memorize(target) {\n    if (typeof memo[target] === 'undefined') {\n      var styleTarget = document.querySelector(target); // Special case to return head of iframe instead of iframe itself\n\n      if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {\n        try {\n          // This will throw an exception if access to iframe is blocked\n          // due to cross-origin restrictions\n          styleTarget = styleTarget.contentDocument.head;\n        } catch (e) {\n          // istanbul ignore next\n          styleTarget = null;\n        }\n      }\n\n      memo[target] = styleTarget;\n    }\n\n    return memo[target];\n  };\n}();\n\nvar stylesInDom = [];\n\nfunction getIndexByIdentifier(identifier) {\n  var result = -1;\n\n  for (var i = 0; i < stylesInDom.length; i++) {\n    if (stylesInDom[i].identifier === identifier) {\n      result = i;\n      break;\n    }\n  }\n\n  return result;\n}\n\nfunction modulesToDom(list, options) {\n  var idCountMap = {};\n  var identifiers = [];\n\n  for (var i = 0; i < list.length; i++) {\n    var item = list[i];\n    var id = options.base ? item[0] + options.base : item[0];\n    var count = idCountMap[id] || 0;\n    var identifier = \"\".concat(id, \" \").concat(count);\n    idCountMap[id] = count + 1;\n    var index = getIndexByIdentifier(identifier);\n    var obj = {\n      css: item[1],\n      media: item[2],\n      sourceMap: item[3]\n    };\n\n    if (index !== -1) {\n      stylesInDom[index].references++;\n      stylesInDom[index].updater(obj);\n    } else {\n      stylesInDom.push({\n        identifier: identifier,\n        updater: addStyle(obj, options),\n        references: 1\n      });\n    }\n\n    identifiers.push(identifier);\n  }\n\n  return identifiers;\n}\n\nfunction insertStyleElement(options) {\n  var style = document.createElement('style');\n  var attributes = options.attributes || {};\n\n  if (typeof attributes.nonce === 'undefined') {\n    var nonce =  true ? __webpack_require__.nc : undefined;\n\n    if (nonce) {\n      attributes.nonce = nonce;\n    }\n  }\n\n  Object.keys(attributes).forEach(function (key) {\n    style.setAttribute(key, attributes[key]);\n  });\n\n  if (typeof options.insert === 'function') {\n    options.insert(style);\n  } else {\n    var target = getTarget(options.insert || 'head');\n\n    if (!target) {\n      throw new Error(\"Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.\");\n    }\n\n    target.appendChild(style);\n  }\n\n  return style;\n}\n\nfunction removeStyleElement(style) {\n  // istanbul ignore if\n  if (style.parentNode === null) {\n    return false;\n  }\n\n  style.parentNode.removeChild(style);\n}\n/* istanbul ignore next  */\n\n\nvar replaceText = function replaceText() {\n  var textStore = [];\n  return function replace(index, replacement) {\n    textStore[index] = replacement;\n    return textStore.filter(Boolean).join('\\n');\n  };\n}();\n\nfunction applyToSingletonTag(style, index, remove, obj) {\n  var css = remove ? '' : obj.media ? \"@media \".concat(obj.media, \" {\").concat(obj.css, \"}\") : obj.css; // For old IE\n\n  /* istanbul ignore if  */\n\n  if (style.styleSheet) {\n    style.styleSheet.cssText = replaceText(index, css);\n  } else {\n    var cssNode = document.createTextNode(css);\n    var childNodes = style.childNodes;\n\n    if (childNodes[index]) {\n      style.removeChild(childNodes[index]);\n    }\n\n    if (childNodes.length) {\n      style.insertBefore(cssNode, childNodes[index]);\n    } else {\n      style.appendChild(cssNode);\n    }\n  }\n}\n\nfunction applyToTag(style, options, obj) {\n  var css = obj.css;\n  var media = obj.media;\n  var sourceMap = obj.sourceMap;\n\n  if (media) {\n    style.setAttribute('media', media);\n  } else {\n    style.removeAttribute('media');\n  }\n\n  if (sourceMap && btoa) {\n    css += \"\\n/*# sourceMappingURL=data:application/json;base64,\".concat(btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))), \" */\");\n  } // For old IE\n\n  /* istanbul ignore if  */\n\n\n  if (style.styleSheet) {\n    style.styleSheet.cssText = css;\n  } else {\n    while (style.firstChild) {\n      style.removeChild(style.firstChild);\n    }\n\n    style.appendChild(document.createTextNode(css));\n  }\n}\n\nvar singleton = null;\nvar singletonCounter = 0;\n\nfunction addStyle(obj, options) {\n  var style;\n  var update;\n  var remove;\n\n  if (options.singleton) {\n    var styleIndex = singletonCounter++;\n    style = singleton || (singleton = insertStyleElement(options));\n    update = applyToSingletonTag.bind(null, style, styleIndex, false);\n    remove = applyToSingletonTag.bind(null, style, styleIndex, true);\n  } else {\n    style = insertStyleElement(options);\n    update = applyToTag.bind(null, style, options);\n\n    remove = function remove() {\n      removeStyleElement(style);\n    };\n  }\n\n  update(obj);\n  return function updateStyle(newObj) {\n    if (newObj) {\n      if (newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap) {\n        return;\n      }\n\n      update(obj = newObj);\n    } else {\n      remove();\n    }\n  };\n}\n\nmodule.exports = function (list, options) {\n  options = options || {}; // Force single-tag solution on IE6-9, which has a hard limit on the # of <style>\n  // tags it will allow on a page\n\n  if (!options.singleton && typeof options.singleton !== 'boolean') {\n    options.singleton = isOldIE();\n  }\n\n  list = list || [];\n  var lastIdentifiers = modulesToDom(list, options);\n  return function update(newList) {\n    newList = newList || [];\n\n    if (Object.prototype.toString.call(newList) !== '[object Array]') {\n      return;\n    }\n\n    for (var i = 0; i < lastIdentifiers.length; i++) {\n      var identifier = lastIdentifiers[i];\n      var index = getIndexByIdentifier(identifier);\n      stylesInDom[index].references--;\n    }\n\n    var newLastIdentifiers = modulesToDom(newList, options);\n\n    for (var _i = 0; _i < lastIdentifiers.length; _i++) {\n      var _identifier = lastIdentifiers[_i];\n\n      var _index = getIndexByIdentifier(_identifier);\n\n      if (stylesInDom[_index].references === 0) {\n        stylesInDom[_index].updater();\n\n        stylesInDom.splice(_index, 1);\n      }\n    }\n\n    lastIdentifiers = newLastIdentifiers;\n  };\n};\n\n//# sourceURL=webpack:///./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js?");
+
+/***/ }),
+
+/***/ "./src/contact-page.js":
+/*!*****************************!*\
+  !*** ./src/contact-page.js ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return contactPage; });\n/* harmony import */ var _images_contact_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/contact.jpg */ \"./src/images/contact.jpg\");\n\n\nfunction contactPage() {\n  const content = document.getElementById('content');\n  content.style.backgroundImage = `url(\"${_images_contact_jpg__WEBPACK_IMPORTED_MODULE_0__[\"default\"]}\")`;\n\n  const mainContainer = document.createElement('div');\n  mainContainer.classList.add('main-container', 'd-flex');\n\n  const contactInformation = document.createElement('div');\n  contactInformation.classList.add('contact-information', 'box');\n\n  contactInformation.innerHTML = `\n    <div>Call Now </div>\n    <div>609-659-3528</div>\n    <div>E-mail</div>\n    <div>bestrestaurant@email.com</div>\n    <div>Location</div>\n    <div>\n      <div>\n        4932  Moonlight Drive        \n      </div>\n      <div>\n        Camden\n      </div>\n      <div>\n        New Jersey\n      </div>\n    </div>\n    <div>Opening Hours</div>\n    <div>\n      <div>\n        9am -18pm(Monday-Friday)        \n      </div>\n      <div>\n        10am -19pm(Saturday)        \n      </div>\n    </div>\n  `;\n\n  mainContainer.appendChild(contactInformation);\n  content.appendChild(mainContainer);\n}\n\n\n//# sourceURL=webpack:///./src/contact-page.js?");
+
+/***/ }),
+
+/***/ "./src/home-page.js":
+/*!**************************!*\
+  !*** ./src/home-page.js ***!
+  \**************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return homePage; });\n/* harmony import */ var _images_main_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/main.jpg */ \"./src/images/main.jpg\");\n\n\nfunction homePage() {\n  const content = document.getElementById(\"content\");\n  content.style.backgroundImage = `url(\"${_images_main_jpg__WEBPACK_IMPORTED_MODULE_0__[\"default\"]}\")`;\n\n  const mainContainer = document.createElement(\"div\");\n  mainContainer.classList.add(\"main-container\", \"d-flex\", \"center-vh\");\n\n  mainContainer.innerHTML = `\n    <div class=\"main-page box center-vh \"> \n      <div class=\"main-title\">\n        Best Restaurant\n      </div>\n      <div class=\"subtitle\">\n        The most delicious meal you've ever had \n      </div>\n    </div>\n`;\n\n  content.appendChild(mainContainer);\n}\n\n\n//# sourceURL=webpack:///./src/home-page.js?");
+
+/***/ }),
+
+/***/ "./src/images/contact.jpg":
+/*!********************************!*\
+  !*** ./src/images/contact.jpg ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"c3d42af39902fb44c43c2f24b7e837e5.jpg\");\n\n//# sourceURL=webpack:///./src/images/contact.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/dessert.jpg":
+/*!********************************!*\
+  !*** ./src/images/dessert.jpg ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"7fba5b3424b5b3c93f85433f937a2a6d.jpg\");\n\n//# sourceURL=webpack:///./src/images/dessert.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/hot-meal.jpg":
+/*!*********************************!*\
+  !*** ./src/images/hot-meal.jpg ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"83b9a3935e566d2519ba3e5f7083dd7b.jpg\");\n\n//# sourceURL=webpack:///./src/images/hot-meal.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/main.jpg":
+/*!*****************************!*\
+  !*** ./src/images/main.jpg ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"c0f56afd0be284ba4b64130dafdd1cc1.jpg\");\n\n//# sourceURL=webpack:///./src/images/main.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/soup.jpg":
+/*!*****************************!*\
+  !*** ./src/images/soup.jpg ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"0a13556969b278bac01a740144bc6c65.jpg\");\n\n//# sourceURL=webpack:///./src/images/soup.jpg?");
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navbar */ \"./src/navbar.js\");\n/* harmony import */ var _home_page__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home-page */ \"./src/home-page.js\");\n/* harmony import */ var _menu_page__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu-page */ \"./src/menu-page.js\");\n/* harmony import */ var _contact_page__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contact-page */ \"./src/contact-page.js\");\n/* harmony import */ var _stylesheets_style_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./stylesheets/style.scss */ \"./src/stylesheets/style.scss\");\n/* harmony import */ var _stylesheets_style_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_stylesheets_style_scss__WEBPACK_IMPORTED_MODULE_4__);\n\n\n\n\n\n\nconst clearPage = () => {\n  const parent = document.getElementById('content');\n  parent.lastChild.remove();\n};\n\nconst showPage = {\n  home: _home_page__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\n  menu: _menu_page__WEBPACK_IMPORTED_MODULE_2__[\"default\"],\n  contact: _contact_page__WEBPACK_IMPORTED_MODULE_3__[\"default\"],\n};\n\nObject(_navbar__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\nObject(_home_page__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n['home', 'menu', 'contact'].forEach((val) => {\n  const pageButton = document.getElementById(val);\n  pageButton.addEventListener('click', () => {\n    clearPage();\n    showPage[val]();\n  });\n});\n\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/menu-page.js":
+/*!**************************!*\
+  !*** ./src/menu-page.js ***!
+  \**************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return menuPage; });\n/* harmony import */ var _images_hot_meal_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/hot-meal.jpg */ \"./src/images/hot-meal.jpg\");\n/* harmony import */ var _images_dessert_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/dessert.jpg */ \"./src/images/dessert.jpg\");\n/* harmony import */ var _images_soup_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/soup.jpg */ \"./src/images/soup.jpg\");\n\n\n\n\nfunction menuPage() {\n  const content = document.getElementById('content');\n  content.classList.add('content');\n  content.style.backgroundImage = 'url(\"\")';\n\n  const mainContainer = document.createElement('div');\n  mainContainer.classList.add('main-container', 'd-flex');\n\n  const container = document.createElement('div');\n  container.classList.add('all-menu');\n\n  container.innerHTML = `\n  <div class=\"position-relative \">\n    <img src=\"${_images_soup_jpg__WEBPACK_IMPORTED_MODULE_2__[\"default\"]}\" alt=\"\">\n    <div class=\"meal-name box center-vh\">Soup</div>\n  </div>\n  <div class=\"position-relative\">\n    <img src=\"${_images_hot_meal_jpg__WEBPACK_IMPORTED_MODULE_0__[\"default\"]}\" alt=\"\">\n    <div class=\"meal-name box center-vh\">Hot Meal</div>\n  </div>\n  <div class=\"position-relative\">\n    <img src=\"${_images_dessert_jpg__WEBPACK_IMPORTED_MODULE_1__[\"default\"]}\" alt=\"\">\n    <div class=\"meal-name box center-vh\">Dessert</div>\n  </div>\n`;\n\n  mainContainer.appendChild(container);\n  content.appendChild(mainContainer);\n}\n\n\n//# sourceURL=webpack:///./src/menu-page.js?");
+
+/***/ }),
+
+/***/ "./src/navbar.js":
+/*!***********************!*\
+  !*** ./src/navbar.js ***!
+  \***********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return navBar; });\nfunction navBar() {\n  const content = document.getElementById('content');\n\n  const nav = document.createElement('div');\n  nav.classList.add('main-nav');\n\n  const homePage = document.createElement('button');\n  homePage.classList.add('home-page', 'custom-button');\n  homePage.innerText = 'Home';\n  homePage.id = 'home';\n\n  const menuPage = document.createElement('button');\n  menuPage.classList.add('menu-page', 'custom-button');\n  menuPage.innerText = 'Menu';\n  menuPage.id = 'menu';\n\n  const contactPage = document.createElement('button');\n  contactPage.classList.add('contact-page', 'custom-button');\n  contactPage.innerText = 'Contact';\n  contactPage.id = 'contact';\n\n  nav.appendChild(homePage);\n  nav.appendChild(menuPage);\n  nav.appendChild(contactPage);\n\n  content.appendChild(nav);\n}\n\n\n//# sourceURL=webpack:///./src/navbar.js?");
+
+/***/ }),
+
+/***/ "./src/stylesheets/style.scss":
+/*!************************************!*\
+  !*** ./src/stylesheets/style.scss ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./style.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/stylesheets/style.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/stylesheets/style.scss?");
+
+/***/ })
+
+/******/ });

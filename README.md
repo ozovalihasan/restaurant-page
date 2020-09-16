@@ -41,14 +41,8 @@ Please [check](https://raw.githack.com/ozovalihasan/restaurant-page/main-parts/d
 
 Then,
 
-- Run `npm run dev`
+- Run `npm run start`
 - Open your browser and go to 'http://localhost:8080' and open 'dist' folder
-
-Alternative way;
-
-- Run `npx webpack --watch` on terminal
-- Use VSCode as editor and [Live Server extenstion](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) for development
-- Run Live Server
 
 ## Authors
 
