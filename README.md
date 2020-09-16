@@ -26,6 +26,7 @@ The website has three pages; main page, menu page and contact page
 - HTML
 - CSS
 - JavaScript
+- webpack
 
 ## Live demo
 
