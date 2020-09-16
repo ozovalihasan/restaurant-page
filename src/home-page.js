@@ -1,11 +1,11 @@
-import mainImage from './images/main.jpg';
+import mainImage from "./images/main.jpg";
 
 export default function homePage() {
-  const content = document.getElementById('content');
+  const content = document.getElementById("content");
   content.style.backgroundImage = `url("${mainImage}")`;
 
-  const mainContainer = document.createElement('div');
-  mainContainer.classList.add('main-container', 'd-flex', 'center-vh');
+  const mainContainer = document.createElement("div");
+  mainContainer.classList.add("main-container", "d-flex", "center-vh");
 
   mainContainer.innerHTML = `
     <div class="main-page box center-vh "> 
